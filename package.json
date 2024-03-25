@@ -1,14 +1,22 @@
 {
   "name": "sit725-2024-t1-prac3",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "demo",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git https://github.com/SindhujaReddy06/sit725-2024-t1-prac3.git"
+  },
+  "author": "sindhuja",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SindhujaReddy06/sit725-2024-t1-prac3/issues"
+  },
+  "homepage": "https://github.com/SindhujaReddy06/sit725-2024-t1-prac3#readme",
   "dependencies": {
     "express": "^4.19.1"
   }
