@@ -5,7 +5,6 @@ const submitForm = () => {
     formData.link = $('#subTitle').val();
     formData.description = $('#description').val();
 
-    // Send form data to server
     $.ajax({
         url: '/api/cards',
         method: 'POST',
@@ -13,7 +12,7 @@ const submitForm = () => {
         data: JSON.stringify(formData),
         success: function(response) {
             console.log(response);
-            addCardToPage(formData); // Add new card to the webpage
+            addCardToPage(formData); 
         },
         error: function(xhr, status, error) {
             console.error(error);
@@ -66,10 +65,10 @@ $(document).ready(function () {
     $('.materialboxed').materialbox();
     $('#formSubmit').click((event) => {
         event.preventDefault();
-        submitForm(); // Call the submitForm function when the submit button is clicked
+        submitForm(); 
     });
     $('.modal').modal();
 
-    // Fetch and display cards when the page is loaded
+    
     fetchAndDisplayCards();
 });
