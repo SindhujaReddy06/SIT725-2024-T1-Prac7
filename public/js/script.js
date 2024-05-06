@@ -12,7 +12,8 @@ const submitForm = () => {
         data: JSON.stringify(formData),
         success: function(response) {
             console.log(response);
-            addCardToPage(formData); 
+            addCardToPage(formData);
+            alert('Bird posted'); 
         },
         error: function(xhr, status, error) {
             console.error(error);
