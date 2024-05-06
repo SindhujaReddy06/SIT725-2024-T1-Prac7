@@ -57,6 +57,11 @@ const fetchAndDisplayCards = () => {
 };
 
 $(document).ready(function () {
+     // Connect to the socket
+     let socket = io();
+     socket.on('number', (msg) => {
+        console.log('Random number: ' + msg);
+     });
     $('.bird-card').click(function(event) {
         event.preventDefault();
         var $cardReveal = $(this).closest('.card').find('.card-reveal');
